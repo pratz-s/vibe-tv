@@ -2,6 +2,8 @@
 
 **It gets your vibe.** A home screen for Google TV that learns your taste from what you actually watch, across every app.
 
+<p align="center"><img src="media/demo.gif" alt="Asking the TV for something spicy in Hinglish, the rows reshaping, the taste scores it learned, and the phone remote" width="720"></p>
+
 Netflix will never tell you the best thing tonight is on Prime. Vibe TV will.
 
 Every streaming app's home screen pushes its own shows. Vibe TV sits on top of Google TV and sees everything you watch, on every app. It recommends from all of them, and one press opens the show in the right app.
@@ -17,6 +19,16 @@ Every streaming app's home screen pushes its own shows. Vibe TV sits on top of G
 - **Save for later, Seen it, Not for me** on every title.
 - **A phone remote**, private to you, that works on iPhone and Android, with voice.
 - **The little things.** The weather and holidays where you live, a butler with opinions, and a pixel boot animation.
+
+## A closer look
+
+| Just say it | It learns your vibe |
+|---|---|
+| ![Results for "kuch spicy dikhao", with the top pick circled](media/screen-1.jpg) | ![The taste scores it learned by genre, and the formula behind them](media/screen-2.jpg) |
+| **Names it mishears still work** | **Your phone is the remote** |
+| ![Paatal Lok found first from a spoken request](media/screen-3.jpg) | ![The phone remote with its voice button](media/screen-4.jpg) |
+
+If it looks useful, a ⭐ helps other people find it.
 
 ## Setting it up
 

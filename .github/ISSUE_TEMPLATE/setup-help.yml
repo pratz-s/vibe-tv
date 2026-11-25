@@ -1,0 +1,42 @@
+name: My TV isn't working
+description: Something went wrong during setup or on the TV
+labels: ["help"]
+body:
+  - type: markdown
+    attributes:
+      value: "Thanks for trying Vibe TV. **Never paste keys, tokens, your remote link or your .env here.** Logs can contain them, so check before posting."
+  - type: input
+    id: tv
+    attributes:
+      label: Your TV
+      description: Brand, model and Android TV / Google TV version (Settings, System, About)
+      placeholder: "e.g. Sony Bravia, Google TV, Android 12"
+    validations:
+      required: true
+  - type: dropdown
+    id: step
+    attributes:
+      label: Where did it go wrong?
+      options:
+        - Setting up the tools or keys
+        - Cloudflare setup (setup_cloud.sh)
+        - Filling the catalogue
+        - Installing on the TV
+        - The Home button or voice button
+        - Search results
+        - Phone remote
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened, and what did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs (optional)
+      description: "From `adb logcat -s TVHOME` or `npx wrangler tail` in worker/. Remove anything private first."
+      render: text
