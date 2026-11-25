@@ -1,0 +1,15 @@
+{
+  "name": "vibe-tv",
+  "main": "src/worker.js",
+  "compatibility_date": "2026-10-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "ai": { "binding": "AI" },
+  "d1_databases": [{ "binding": "DB", "database_name": "vibe_tv", "database_id": "__D1_ID__" }],
+  "vectorize": [{ "binding": "VEC", "index_name": "vibe-tv-titles" }],
+  "triggers": { "crons": ["17 21 * * *", "41 * * * *"] },
+  // Filled in from .env by scripts/setup_cloud.sh. These aren't secrets; the keys are stored separately as Cloudflare secrets.
+  "vars": {
+    "SERVICES": "__SERVICES__", "COUNTRY": "__COUNTRY__", "CATALOGS": "__CATALOGS__", "APPS": "__APPS__",
+    "CITY": "__CITY__", "LAT": "__LAT__", "LON": "__LON__", "TIMEZONE": "__TIMEZONE__", "ASSISTANT_NAME": "__ASSISTANT_NAME__"
+  }
+}

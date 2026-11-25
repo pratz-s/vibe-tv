@@ -1,0 +1,20 @@
+# Private: keys, your taste, your engine's IDs. scripts/check_secrets.sh also blocks these.
+.env
+taste.md
+.private-words
+worker/wrangler.jsonc
+tv-app/local.properties
+# Your catalogue download
+worker/catalog/*.jsonl
+worker/catalog/*state*.json
+# Built and installed things
+worker/node_modules/
+worker/.wrangler/
+tv-app/.gradle/
+tv-app/build/
+tv-app/app/build/
+*.apk
+design/sounds/
+__pycache__/
+.DS_Store
+.idea/

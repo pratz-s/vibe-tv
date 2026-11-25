@@ -1,0 +1,12 @@
+{
+  "name": "vibe-tv-worker",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "deploy": "wrangler deploy"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "wrangler": "latest"
+  }
+}

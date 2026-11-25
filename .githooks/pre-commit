@@ -1,0 +1,3 @@
+#!/bin/bash
+# Blocks a commit that would publish a key or personal file.
+exec scripts/check_secrets.sh
